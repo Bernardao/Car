@@ -1,0 +1,284 @@
+@charset "CP850";
+/* line 8, ../sass/style.scss */
+html {
+  overflow: hidden;
+}
+/* line 10, ../sass/style.scss */
+html body {
+  background: #f8eba2 url(../images/fondo/pattern.png) repeat top left;
+  font-family: 'Delius', cursive;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin: 0 auto;
+  overflow: hidden\9;
+}
+
+/************************** HEADER *****************************/
+/* line 21, ../sass/style.scss */
+body #header {
+  position: fixed;
+  width: 100%;
+  display: inline;
+  text-align: center;
+  z-index: 2000;
+  background: #f8eba2 url(../images/fondo/pattern.png) repeat top left;
+  -webkit-box-shadow: #006565 0 10px 25px;
+  -moz-box-shadow: #006565 0 10px 25px;
+  box-shadow: #006565 0 10px 25px;
+}
+/* line 29, ../sass/style.scss */
+body #header h1 {
+  display: inline;
+  font-family: 'Bentham', serif;
+  font-size: 250%;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  text-shadow: 0 2px 2px #006565;
+}
+/* line 40, ../sass/style.scss */
+body #header h2 {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 150%;
+  text-shadow: 0 2px 2px #fff;
+  color: #006565;
+  margin: 0 1em;
+  display: inline;
+}
+/* line 48, ../sass/style.scss */
+body #header img {
+  position: relative;
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: .3em;
+  vertical-align: bottom;
+}
+/* line 57, ../sass/style.scss */
+body #header #social {
+  float: right;
+  margin-right: 5%;
+  padding-top: .2em;
+}
+/* line 61, ../sass/style.scss */
+body #header #social img {
+  padding: .2em .3em .3em .3em;
+  margin-top: .2em;
+  -webkit-box-shadow: #006565 0 10px 25px;
+  -moz-box-shadow: #006565 0 10px 25px;
+  box-shadow: #006565 0 10px 25px;
+}
+
+/****************** FIN HEADER ********************************/
+/***************** SECTION ***********************************/
+/* line 71, ../sass/style.scss */
+.section {
+  height: 4000px;
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+  padding-top: 5.5em;
+  zmargin-top: 3em;
+  -webkit-box-shadow: #006565 10px 10px 10px;
+  -moz-box-shadow: #006565 10px 10px 10px;
+  box-shadow: #006565 10px 10px 10px;
+  background-color: #bcd9db;
+}
+
+/***************** FIN SECTION *******************************/
+/***************** ASIDE *************************************/
+/* line 84, ../sass/style.scss */
+.aside {
+  padding: 0 2em;
+}
+
+/***************** FIN ASIDE *********************************/
+/****************** ARROW ***************************************/
+/* line 90, ../sass/style.scss */
+.arrow {
+  position: relative;
+  background: #006565;
+  border-bottom: 2px solid grey;
+  width: 90%;
+}
+/* line 91, ../sass/style.scss */
+.arrow div {
+  font-family: 'Flamenco', cursive;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 2px white;
+  padding-left: .2em;
+}
+/* line 103, ../sass/style.scss */
+.arrow:after, .arrow:before {
+  right: 0%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 112, ../sass/style.scss */
+.arrow:after {
+  border-width: 14px;
+  top: 50%;
+  margin-top: -14px;
+}
+/* line 117, ../sass/style.scss */
+.arrow:before {
+  border-right-color: #bcd9db;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 123, ../sass/style.scss */
+.arrow a {
+  display: block;
+  text-decoration: none;
+}
+/* line 126, ../sass/style.scss */
+.arrow a:hover {
+  background-color: #007e7f;
+  color: red;
+  text-decoration: underline;
+}
+/* line 130, ../sass/style.scss */
+.arrow a:link {
+  color: #f8eba2;
+}
+
+/******************* FIN ARROW **********************************/
+/**************** BOTON NAVBAR **********************************/
+/* line 140, ../sass/style.scss */
+.button-2 {
+  width: auto;
+  background: #2ba6cb;
+  border: 1px solid #1e728c;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 5px;
+  outline: none;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  /* Hovers */
+  /* Sizes */
+  width: 80%;
+  text-align: center;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* Colors */
+  /* Radii */
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  /* Layout */
+  /* Disabled ---------- */
+}
+
+/****************** FIN BOTÓN NAVBAR *************************************************/
+/******************** SMALL ***********************************************************/
+/* Small display targeting */
+@media only screen and (max-width: 767px) {
+  /* line 178, ../sass/style.scss */
+  html {
+    overflow: visible;
+  }
+
+  /* line 181, ../sass/style.scss */
+  .section {
+    width: 100%;
+  }
+
+  /* line 189, ../sass/style.scss */
+  .show-for-small,
+  .hide-for-medium,
+  .show-for-medium-down,
+  .hide-for-large,
+  .hide-for-large-up,
+  .hide-for-xlarge {
+    display: block !important;
+  }
+}
+/******************** TAB *********************/
+/* line 195, ../sass/style.scss */
+dl.tabs dd.active a {
+  cursor: default;
+  color: #3c3c3c;
+  background: #fff;
+  background-color: #006565;
+  color: #f8eba2;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #f8eba2;
+  border-right: 1px solid #f8eba2;
+  font-weight: bold;
+}
+
+/* line 208, ../sass/style.scss */
+dl.tabs dd.active {
+  border-top: 2px solid #f8eba2;
+  margin-top: -3px;
+}
+
+/* line 212, ../sass/style.scss */
+dl.tabs dd a {
+  color: #006565;
+  background-color: #f8eba2;
+  font-weight: bold;
+}
+
+/* line 217, ../sass/style.scss */
+dl.tabs dd {
+  border-left: 1px solid #006565;
+  border-right: 1px solid #006565;
+  border-top: 1px solid #006565;
+}
+
+/************* FIN TAB ************************/
+/* line 224, ../sass/style.scss */
+.reveal-modal.large {
+  background: url(../images/fondo/pattern.png) repeat top left;
+}
+
+/* line 227, ../sass/style.scss */
+.revelador {
+  zbackground-color: #bcd9db;
+  color: #006565;
+}
+/* line 230, ../sass/style.scss */
+.revelador .four.columns {
+  background-color: #bcd9db;
+}
+/* line 233, ../sass/style.scss */
+.revelador .eight.columns {
+  color: #006565;
+  background-color: #bcd9db;
+}
+/* line 237, ../sass/style.scss */
+.revelador .link-list h4 {
+  color: #7e5431;
+}
+
+/***************** A *******************************/

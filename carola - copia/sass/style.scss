@@ -1,0 +1,241 @@
+@import "compass/css3";
+
+$verde: #006565;
+$naranja: #f8eba2;
+$celeste: #bcd9db;
+$marron: #7e5431;
+
+html {
+	overflow: hidden;
+	body {
+		background:$naranja url(../images/fondo/pattern.png) repeat top left;
+		font-family: 'Delius', cursive;
+		font-size: 100%;
+		letter-spacing:-1px;
+		margin:0 auto;
+		overflow: hidden\9;
+	}
+}
+
+/************************** HEADER *****************************/
+body #header {
+	position: fixed;
+	width: 100%;
+	display: inline;
+	text-align: center;
+	z-index: 2000;
+	background:$naranja url(../images/fondo/pattern.png) repeat top left;
+	@include box-shadow($verde 0 10px 25px);
+	h1	{
+		display: inline;
+		font-family: 'Bentham', serif;
+		font-size: 250%;
+		color: #fff;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 0;
+		text-shadow: 0 2px 2px $verde;
+		
+	}
+	h2 {
+		font-family: 'Dawning of a New Day', cursive;
+		font-size: 150%;
+		text-shadow: 0 2px 2px #fff;
+		color: $verde;
+		margin: 0 1em;
+		display: inline;
+	}	
+	img {
+		position: relative;
+		display: inline;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: .3em;
+		vertical-align: bottom;
+	}
+	#social {
+		float: right;
+		margin-right: 5%;
+		padding-top: .2em;
+		img {
+			padding: .2em .3em .3em .3em;
+			margin-top: .2em;
+			@include box-shadow($verde 0 10px 25px);
+		}
+	}
+}
+/****************** FIN HEADER ********************************/
+
+/***************** SECTION ***********************************/
+.section{
+    height:4000px;
+	margin: 0 auto;
+	text-align:left;
+	width:80%;
+	padding-top: 5.5em;
+	zmargin-top: 3em;
+	@include box-shadow($verde 10px 10px 10px);
+	background-color: $celeste;
+}
+/***************** FIN SECTION *******************************/
+
+/***************** ASIDE *************************************/
+.aside {
+	padding: 0 2em;
+}
+/***************** FIN ASIDE *********************************/
+
+/****************** ARROW ***************************************/
+.arrow {
+	div {
+		font-family: 'Flamenco', cursive;
+		font-size: 1.4em;
+		text-shadow: 2px 2px 2px white;
+		
+		padding-left: .2em;
+	}
+	position: relative;
+	background: $verde;
+	border-bottom: 2px solid grey;
+	width: 90%;
+	
+	&:after, &:before {
+		right: 0%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	&:after {
+		border-width: 14px;
+		top: 50%;
+		margin-top: -14px;
+	}
+	&:before {
+		border-right-color: $celeste;
+		border-width: 20px;
+		top: 50%;
+		margin-top: -20px;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		&:hover {
+			background-color: lighten($verde, 5%);color: red;
+			text-decoration: underline;
+		}
+		&:link {
+			color: $naranja;
+			
+		}
+	}
+}
+
+/******************* FIN ARROW **********************************/
+
+/**************** BOTON NAVBAR **********************************/
+.button-2 {
+	width: auto;
+	background: #2ba6cb;
+	border: 1px solid #1e728c;
+	@include box-shadow(rgba(255, 255, 255, 0.5) 0 1px 0 inset);
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 5px;
+	outline: none;
+	padding: 10px 20px 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	@include transition-duration(.15s);
+	@include transition-timing-function(ease-in-out);
+	/* Hovers */
+	/* Sizes */
+	width: 80%;
+	text-align: center;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	/* Colors */
+	/* Radii */
+	@include border-radius(1000px);
+
+	/* Layout */
+	/* Disabled ---------- */
+}
+/****************** FIN BOTÓN NAVBAR *************************************************/
+
+/******************** SMALL ***********************************************************/
+/* Small display targeting */
+@media only screen and (max-width: 767px) {
+	html {
+		overflow: visible;
+	}
+	.section {
+		width: 100%;
+	}
+	.show-for-small,
+	.hide-for-medium,
+	.show-for-medium-down,
+	.hide-for-large,
+	.hide-for-large-up,
+	.hide-for-xlarge {
+		display: block !important;
+	}
+}
+
+/******************** TAB *********************/
+dl.tabs dd.active a {
+	cursor: default;
+	color: #3c3c3c;
+	background: #fff;
+
+	background-color: $verde;
+	color: $naranja;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid $naranja;
+	border-right: 1px solid $naranja;
+	font-weight: bold;
+}
+dl.tabs dd.active {
+	border-top: 2px solid $naranja;
+	margin-top: -3px;
+}
+dl.tabs dd a {
+	color: $verde;
+	background-color: $naranja;
+	font-weight: bold;
+}
+dl.tabs dd {
+	border-left: 1px solid $verde;
+	border-right: 1px solid $verde;
+	border-top: 1px solid $verde;
+}
+/************* FIN TAB ************************/
+
+.reveal-modal.large {
+	background: url(../images/fondo/pattern.png) repeat top left;
+}
+.revelador {
+	zbackground-color: $celeste;
+	color: $verde;
+	.four.columns {
+		background-color: $celeste;
+	}
+	.eight.columns {
+		color: $verde;
+		background-color: $celeste;
+	}
+	.link-list h4 {
+		color: $marron;
+	}
+}
+/***************** A *******************************/
